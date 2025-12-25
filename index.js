@@ -14,10 +14,14 @@ let f = 12;
 console.log("The result is: ", e + f);
 
 // 4
-console.log(typeof 11);
-console.log(typeof true);
-console.log(typeof "java script");
-console.log(typeof "100");
+const numberOfApples = 11;
+console.log(numberOfApples);
+const isHappy = true;
+console.log(isHappy);
+const programmingLanguage = "JavaScript";
+console.log(programmingLanguage);
+const stringNumber = "100";
+console.log(stringNumber);
 
 // 5
 let num = 1;
@@ -32,17 +36,20 @@ console.log(num);
 /////////////////////////////////////////////////
 
 //1
-let userResponce1 = +prompt("What is the first number?");
-alert("The square of your number is: " + userResponce1 ** 2);
+let userResponceSquare = Number(prompt("What is the first number?"));
+alert("The square of your number is: " + userResponceSquare ** 2);
 
 //2
-let userResponce2 = +prompt("What is the first number?");
-let userResponce3 = +prompt("What is the second number?");
-alert("The average of your numbers is: " + (userResponce2 + userResponce3) / 2);
+let userResponceFirstNum = Number(prompt("What is the first number?"));
+let userResponceSecondNum = Number(prompt("What is the second number?"));
+alert(
+  "The average of your numbers is: " +
+    (userResponceFirstNum + userResponceSecondNum) / 2
+);
 
 //3
-let userResponce4 = +prompt("Specify the number of minutes:");
-alert(userResponce4 + " minutes is " + userResponce4 * 60 + " seconds");
+let userResponceTime = Number(prompt("Specify the number of minutes:"));
+alert(userResponceTime + " minutes is " + userResponceTime * 60 + " seconds");
 
 //4
 let greetings = "Hello, ";
